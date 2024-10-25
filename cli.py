@@ -6,7 +6,7 @@ import openai
 # Set up defaults and get API key from environment variable
 defaults = {
     "api_key": os.getenv('OPENAI_API_KEY'),
-    "model": "dall-e-3",
+    "model": "dall-e-2",
     "size": "1024x1024",
     "quality": "standard",
     "number": "1",
