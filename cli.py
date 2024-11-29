@@ -17,9 +17,11 @@ parser.add_argument('-s', '--size', type=str, default=defaults["size"], help='Im
 parser.add_argument('-n', '--number', type=int, default=defaults["number"], help='Number of images to generate.')
 args = parser.parse_args()
 
+# Validate API key
 if not args.api_key:
     raise ValueError("API key is required. Set OPENAI_API_KEY environment variable or use --api-key.")
 
+# Set API key for OpenAI
 openai.api_key = args.api_key
 
 # Generate images
