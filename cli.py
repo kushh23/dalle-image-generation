@@ -21,7 +21,7 @@ args = parser.parse_args()
 if not args.api_key:
     raise ValueError("API key is required. Set OPENAI_API_KEY environment variable or use --api-key.")
 
-# Set API key for OpenAI
+# Set the API key for OpenAI
 openai.api_key = args.api_key
 
 # Generate images
